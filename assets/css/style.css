@@ -67,8 +67,8 @@
 
 /* intro video in header */
 #intro-vid .intro-vid {
-    width: 100%;
     min-height: 100%; 
+    width: auto;
     aspect-ratio: 16 / 9;
 }
 
@@ -86,7 +86,7 @@
     width: 100%;
     text-align: center;
     box-shadow: 0 2px 2px #7a9fc2;
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 #header .lead {
@@ -185,6 +185,7 @@ h2 {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     padding: 20px 0;
+    margin: 0;
     text-align: center;
     font-size: 0.9rem;
     display: flex;

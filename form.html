@@ -51,19 +51,19 @@
     <header id="header" class="container section">
         <div class="row justify-content-center">
             <div class="col-12 col-md-8 text-center text-xl-start">
-
-                <p class="my-4">
-                    Thank you for helping us combat hate in our country and keep our communities safe. 
-                    Referring someone to PREVENT ensures they get the help they need to keep them and others safe. Getting support from Prevent is not a punishment and won't go on a person's criminal record.
-                    Please fill out the form below with as many details as you can. You can remain anonymous if you prefer.
-                    Thank you for helping us combat hate in our country and keep our communities safe.
-                    Referring someone to PREVENT ensures they get the help they need to keep them and others safe.
-                    Getting support from Prevent is not a punishment and won't go on a person's criminal record.
-                    Please fill out the form below with as many details as you can. You can remain anonymous if you
-                    prefer.
-                </p>
+                <div class="text-center">
+                    <h1>Report a Concern</h1>
+                    <p class="my-4">Thank you for helping us combat hate in our country and keep our communities safe.
+                    </p>
+                    <p class="my-4">Referring someone to PREVENT ensures they get the help they need to keep them and
+                        others safe.</p>
+                    <p class="my-4">Getting support from Prevent is not a punishment and won't go on a person's criminal
+                        record.</p>
+                    <p class="my-4">Please fill out the form below with as many details as you can. You can remain
+                        anonymous if you prefer.
+                    </p>
+                </div>
             </div>
-        </div>
     </header>
 
 
@@ -73,204 +73,176 @@
             <div class="row justify-content-center">
                 <div class="col-12 col-md-8">
 
-                    <div class="text-center">
-                        <h2>Report a Concern</h2>
-                    </div>
                     <form action="success.html" method="GET">
                         <div class="row">
+                            <!-- Q1 - What is the concern-->
                             <div class="col-12 mb-3">
-                                <label for="message" class="form-label"><strong>Tell us about the concern you have /
-                                        what has happened.</strong>
-                                    (What did you see / hear / read?)</label>
+                                <label for="message" class="form-label">Q-1 <strong>Tell us about the concern you have /
+                                        what has happened.</strong></label>
+                                <p> (What did you see / hear / read?)</p>
                                 <textarea class="form-control" rows="10" id="message" name="message"
                                     required></textarea>
-                                <label for="message" class="form-label"><strong>Tell us about the concern you have / what has happened.</strong> (What did you see / hear / read?)</label>
-                                <textarea class="form-control" rows="10" id="message" name="message" required></textarea>
                             </div>
-    
+                            <!-- Q2 - Evidence-->
                             <div class="col-12 mb-3">
-                                <label for="evidence"><strong>Do you have any evidence?</strong></label><br> 
-                                <input type="radio" id="yes"name="evidence" value="yes" required>
-                                <label for="yes">Yes</label><br> 
-                                    <input type="radio" id="no" name="evidence" value="no" required>
-                                <label for="no">No</label><br>
-                                <label for="evidence" class="form-label" required><strong>What type of 
-                                    evidence do you have?</strong> Write <em>'no evidence'</em> if there is no evidence.</label>
-                                <textarea class="form-control" rows="10" id="message" name="message" required></textarea>
-                            </div>
+                                <label for="evidence">Q-2 <strong>Do you have any evidence?</strong></label><br>
+
                                 <input type="radio" id="evidence-yes" name="evidence" value="yes" required>
-                                <label for="evidence-yes">Yes</label><br> 
-                                <input type="radio" id="evidence-no" name="evidence" value="no">
+                                <label for="evidence-yes">Yes</label><br>
+
+                                <input type="radio" id="evidence-no" name="evidence" value="no" required>
                                 <label for="evidence-no">No</label><br>
-    
-                                <label for="evidence-type" class="form-label"><strong>What type of evidence do you have?</strong> Write <em>'no evidence'</em> if there is no evidence.</label>
-                                <textarea class="form-control" rows="10" id="evidence-type" name="evidence-type"></textarea>
+
+                                <!-- evidence-type-->
+                                <label for="evidence-add" class="form-label">Q2 - cont. <strong>What type of evidence do
+                                        you have?</strong></label>
+                                <p>Write <em>'no evidence'</em> if there is no evidence.</p>
+                                <textarea class="form-control" rows="10" id="evidence-add" name="evidence-add"
+                                    required></textarea>
                             </div>
-    
+
+                            <!-- Q3 - When did this happen-->
                             <div class="col-12 mb-3">
-                                <label for="when"><strong>When did this happen?</strong> (<em>or</em> the first time you became concerned)</label><br>
-                                    <input type="date" id="when" name="when"><br>
-                                <input type="date" id="when" name="when"><br>
+                                <label for="date">Q-3 <strong>When did this happen?</strong></label>
+                                <p>(<em>or</em> the first time you became concerned)<br></p>
+                                <input type="date" id="date" name="date" required><br>
                             </div>
-    
+
+                            <!-- Q4 - Is this an isolated event-->
                             <div class="col-12 mb-3">
-                                <label for="isolated"><strong>Is this an isolated event?</strong></label><br> 
-                                    <input type="radio" id="yes" name="isolated" value="yes" required>
-                                <label for="yes"><strong>Yes</strong> - it has happened only once</label><br>
-                                    <input type="radio" id="no" name="isolated" value="no" required>
-                                <label for="no"><strong>No</strong> - it has happened more than once</label><br>
-                            </div>
-                            <div class="col-12 mb-3">
-                                <label for="message" class="form-label"><strong>Where did this happen?</strong>
-                                    (Name and/or address of location / venue - please also include the location if it was online content
-                                    viewed)</label>
-                                <textarea class="form-control" rows="10" id="message" name="message" required></textarea>
-                            </div>
-                            <div class="col-12 mb-3">
-                                <label for="description"><strong>Do you know the name (and/or role) of the person(s)involved?</strong></label><br>
-                                    <input type="radio" id="yes" name="description" value="yes" required>
-                                <label for="yes"><strong>Yes</strong> - I know the person(s) involved</label><br> 
-                                    <input type="radio" id="no" name="description" value="no" required>
-                                <label for="no"><strong>No</strong> - I can give a description</label><br>
-                                <label for="description" class="form-label" required>Write <em>'no description'</em> if you cannot provide
-                                    a description.</label>
-                                <textarea class="form-control" rows="10" id="message" name="message" required></textarea>
-                                <input type="radio" id="isolated-yes" name="isolated" value="yes" required>
+                                <label for="isolated">Q-4 <strong>Is this an isolated event?</strong></label><br>
+
+                                <input type="radio" id="yes-isolated" name="isolated" value="yes" required>
                                 <label for="isolated-yes"><strong>Yes</strong> - it has happened only once</label><br>
-                                <input type="radio" id="isolated-no" name="isolated" value="no">
-                                <label for="isolated-no"><strong>No</strong> - it has happened more than once</label><br>
+
+                                <input type="radio" id="no-isolated" name="isolated" value="no" required>
+                                <label for="isolated-no"><strong>No</strong> - it has happened more than
+                                    once</label><br>
                             </div>
-    
+
+                            <!-- Q5 - Where did this happen-->
                             <div class="col-12 mb-3">
-                                <label for="message" class="form-label"><strong>Any further details to add?</strong></label>
-                                <textarea class="form-control" rows="6" id="message" name="message"></textarea>
-                                <label for="location"><strong>Where did this happen?</strong></label>
-                                <textarea class ="form-control", rows ="10", id ="location", name ="location", required></textarea>
+                                <label for="where" class="form-label">Q-5 <strong>Where did this
+                                        happen?</strong></label>
+                                <p>(Name and/or address of location / venue - please also include the location if it was
+                                    online content viewed)</p>
+                                <textarea class="form-control" rows="10" id="where" name="where" required></textarea>
                             </div>
-                    
+                            <!-- Q6 - description -->
                             <div class="col-12 mb-3">
-                                <label for="contact-agreed"><strong>Can we contact you regarding this incident?</strong></label><br>
-                                    <input type="radio" id="yes" name="contact-agreed" value="yes" required>
-                                <label for="yes"><strong>Yes</strong></label><br> 
-                                    <input type="radio" id="no" name="contact-agreed" value="no" required>
-                                <label for="no"><strong>No</strong></label><br>
-    
-                            <div class = "col-12 mb-3">
-                                <label for = "description"><strong>Do you know the name (and/or role) of the person(s) involved?</strong></label><br>
-                                <input type = "radio", id = "description-yes", name = "description", value = "yes">
-                                <label for = "description-yes"><strong>Yes</strong> - I know the person(s) involved</label><br> 
-                                <input type = "radio", id = "description-no", name = "description", value = "no">
-                                <label for = "description-no"><strong>No</strong> - I can give a description</label><br>
-    
-                                <!-- Description Textarea -->
-                                <label for ="description-textarea" class ="form-label">Write<em>'no description'</em> if you cannot provide a description.</label>
-                                <textarea class ="form-control", rows ="10", id ="description-textarea", name ="description-textarea"></textarea>
+                                <label for="description">Q-6 <strong>Do you know the name (and/or role) of the
+                                        person(s)involved?</strong></label><br>
+
+                                <input type="radio" id="yes-description" name="description" value="yes" required>
+                                <label for="yes-description"><strong>Yes</strong> - I know the person(s)
+                                    involved</label><br>
+
+                                <input type="radio" id="no-description" name="description" value="no" required>
+                                <label for="no-description"><strong>No</strong> - I can give a description</label><br>
+
+                                <label for="description" class="form-label">Write<em>'no description'</em> if you cannot
+                                    provide a description.</label>
+                                <textarea class="form-control" rows="10" id="description" name="description"
+                                    required></textarea>
                             </div>
+
+                            <!-- Q7 further Details Section -->
+                            <div class="col-12 mb-3">
+                                <label for="further-details" class="form-label">Q-7 <strong>Any further details to
+                                        add?</strong></label>
+                                <textarea class="form-control" rows="6" id="further-details"
+                                    name="further-details"></textarea>
+                            </div>
+
+                            <!-- Q8 Contact Agreement Section -->
+                            <div class="col-12 mb-3">
+                                <label for="contact-agreed">Q-8 <strong>Can we contact you regarding this
+                                        incident?</strong></label><br>
+                                <input type="radio" id="yes-contact-agreed" name="contact-agreed" value="yes" required>
+                                <label for="contact-agreed-yes"><strong>Yes</strong></label><br>
+                                <input type="radio" id="no-contact-agreed" name="contact-agreed" value="no" required>
+                                <label for="contact-agreed-no"><strong>No</strong></label><br>
+
+                                <p></p>
+                            </div>
+                            <!-- Q9 Contact details section -->
+                            <div class="col-12 col-lg-6 mb-3">Q-9 <strong>Your contact details</strong>
+                                <p>(not required if you prefer to remain anonymous)</p>
+                            </div>
+                            <!--Name-->
                             <div class="col-12 col-lg-6 mb-3">
                                 <label for="name" class="form-label">Name</label>
                                 <input class="form-control" id="name" name="name" type="text">
                             </div>
+                            <!--email-->
                             <div class="col-12 col-lg-6 mb-3">
                                 <label for="email" class="form-label">Email</label>
                                 <input class="form-control" id="email" name="email" type="email">
                             </div>
+                            <!--phone-->
                             <div class="col-12 col-lg-6 mb-3">
                                 <label for="phone" class="form-label">Phone number</label>
                                 <input class="form-control" id="phone" name="phone" type="number">
                             </div>
-                            
+
+                            <!-- Q10 Contact Method Section -->
                             <div class="col-12 mb-3">
-                                <label for="contact-method"><strong>Preferred method of contact</strong></label><br>
-                                    <input type="radio" id="yes" name="contact-method" value="yes">
-                                <label for="yes">Telephone</label><br> 
-                                    <input type="radio" id="no" name="contact-method" value="no">
-                                <label for="no">Email</label><br>
-    
-                            <!-- Further Details Section -->
-                            <div class = col-12 mb-3 >
-                                <label for ="details"><strong>Any further details to add?</strong></label >
-                                 <textarea  class ="form-control"  rows ="6"id ="details"name ="details"></textarea >
-                              </div >
-    
-                              <!-- Contact Agreement Section -->
-                              <div  class ="col-12 mb-3 ">
-                                <label  for ="contact-agreed"><strong >Can we contact you regarding this incident?</strong></label ><br >
-                                <input  type ="radio"id ="contact-agreed-yes"name ="contact-agreed"value ="yes ">
-                                <label  for ="contact-agreed-yes"><strong >Yes</strong></label ><br > 
-                                <input  type ="radio"id ="contact-agreed-no"name ="contact-agreed"value ="no ">
-                                <label  for ="contact-agreed-no"><strong >No</strong></label ><br >
-                              </div >
-    
-                              <!-- Name Input Section -->
-                              <div  class ="col-12 col-lg-6 mb-3 ">
-                                <label  for ="name">Name</label >
-                                <input  class ="form-control"id ="name"name ="name"type ="text ">
-                              </div >
-    
-                              <!-- Email Input Section -->
-                              <div  class ="col-12 col-lg-6 mb-3 ">
-                                <label  for ="email">Email</label >
-                                <input  class ="form-control"id ="email"name ="email"type ="email ">
-                              </div >
-    
-                              <!-- Phone Input Section -->
-                              <div  class ="col-12 col-lg-6 mb-3 ">
-                                <label  for ="phone">Phone number</label >
-                                <input  class ="form-control"id ="phone"name ="phone"type ="number ">
-                              </div >
-                                <input type radio, id="contact-method-email" name="contact-method" value="email">
+                                <label for="contact-method">Q-10 <strong>Preferred method of
+                                        contact</strong></label><br>
+                                <input type="radio" id="contact-method-tel" name="contact-method" value="yes">
+                                <label for="contact-method-yes">Telephone</label><br>
+                                <input type="radio" id="contact-method-email" name="contact-method" value="yes">
                                 <label for="contact-method-email">Email</label><br>
                             </div>
 
-
-                            <button type="submit">Submit</button>
-                            </div>
-                        <div>
+                            <!-- form submit button -->
+                            <div><button class="button" type="submit">Submit</button></div>
+                            <div>
                     </form>
                 </div>
             </div>
         </section>
-
-</main>
-    <!-- Footer -->
-    <!-- mt-auto added to push footer to the bottom of the page -->
-    <footer id="footer" class="mt-auto">
-        <div class="container section">
-            <div class="row justify-content-center">
-                <div class="col-12 text-center">
-
-                </div>
-
-                <!-- Social media links -->
-                <div class="row"></div>
-                <div class="container justify-content-center">
-                    <div class="social-links my-4">Visit our social media pages for news and strategy updates
-                        <div><a href="https://www.instagram.com" target="_blank"
-                                aria-label="Visit our Instagram page (opens in a new tab)" rel="noopener"><i
-                                    class="fa-brands fa-instagram"></i></a>
-                            <a href="https://www.facebook.com" target="_blank"
-                                aria-label="Visit our Facebook page (opens in a new tab)" rel="noopener"><i
-                                    class="fa-brands fa-square-facebook"></i></a>
-                            <a href="https://www.x.com" target="_blank"
-                                aria-label="Visit our X feed (opens in a new tab)" rel="noopener"><i
-                                    class="fa-brands fa-x-twitter"></i></a>
-                            <a href="https://www.youtube.com/watch?v=udRpKAlu-Q8" target="_blank"
-                                aria-label="See Prevent UK videos on You-tube (opens in a new tab)" rel="noopener"><i
-                                    class="fa-brands fa-youtube"></i></a>
-                        </div>
+    </main>
+   <!-- Footer -->
+<footer id="footer" class="mt-auto">
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center">
+                <!--Social media links-->
+                <div class="row">
+                    <div class="social-links my-4">
+                    <p>Visit our social media pages for news and strategy updates</p>
+                    <div>
+                        <a href="https://www.instagram.com" target="_blank" aria-label="Visit our Instagram page (opens in a new tab)" rel="noopener">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com" target="_blank" aria-label="Visit our Facebook page (opens in a new tab)" rel="noopener">
+                            <i class="fa-brands fa-square-facebook"></i>
+                        </a>
+                        <a href="https://www.x.com" target="_blank" aria-label="Visit our X feed (opens in a new tab)" rel="noopener">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="https://www.youtube.com/watch?v=udRpKAlu-Q8" target="_blank" aria-label="See Prevent UK videos on YouTube (opens in a new tab)" rel="noopener">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-    </footer>
-    <!-- Bootstrap JS -->
+    </div>
+</footer>
+    <!-- Bootstrap JS link -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+
     </script>
 
     <!-- Font Awesome kit -->
+
     <script src="https://kit.fontawesome.com/aa9af45995.js" crossorigin="anonymous"></script>
 
-</body>
-
+    <!-- Javascript file for collapsing navbar selector-->
+    </body>
 </html>
