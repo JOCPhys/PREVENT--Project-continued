@@ -64,12 +64,13 @@
                     </p>
                 </div>
             </div>
+        </div>
     </header>
 
 
     <main>
         <!-- Report-a-concern form section -->
-        <section id="report-a-concern-form" class="container section">
+            <div id="report-a-concern-form" class="container section">
             <div class="row justify-content-center">
                 <div class="col-12 col-md-8">
 
@@ -85,7 +86,7 @@
                             </div>
                             <!-- Q2 - Evidence-->
                             <div class="col-12 mb-3">
-                                <label for="evidence">Q-2 <strong>Do you have any evidence?</strong></label><br>
+                                <label for="evidence-yes">Q-2 <strong>Do you have any evidence?</strong></label><br>
 
                                 <input type="radio" id="evidence-yes" name="evidence" value="yes" required>
                                 <label for="evidence-yes">Yes</label><br>
@@ -110,13 +111,13 @@
 
                             <!-- Q4 - Is this an isolated event-->
                             <div class="col-12 mb-3">
-                                <label for="isolated">Q-4 <strong>Is this an isolated event?</strong></label><br>
+                                <label for="no-isolated">Q-4 <strong>Is this an isolated event?</strong></label><br>
 
                                 <input type="radio" id="yes-isolated" name="isolated" value="yes" required>
-                                <label for="isolated-yes"><strong>Yes</strong> - it has happened only once</label><br>
+                                <label for="yes-isolated"><strong>Yes</strong> - it has happened only once</label><br>
 
                                 <input type="radio" id="no-isolated" name="isolated" value="no" required>
-                                <label for="isolated-no"><strong>No</strong> - it has happened more than
+                                <label for="no-isolated"><strong>No</strong> - it has happened more than
                                     once</label><br>
                             </div>
 
@@ -140,7 +141,7 @@
                                 <input type="radio" id="no-description" name="description" value="no" required>
                                 <label for="no-description"><strong>No</strong> - I can give a description</label><br>
 
-                                <label for="description" class="form-label">Write<em>'no description'</em> if you cannot
+                                <label for="description" class="form-label">Write <em>'no description' </em> if you cannot
                                     provide a description.</label>
                                 <textarea class="form-control" rows="10" id="description" name="description"
                                     required></textarea>
@@ -156,12 +157,12 @@
 
                             <!-- Q8 Contact Agreement Section -->
                             <div class="col-12 mb-3">
-                                <label for="contact-agreed">Q-8 <strong>Can we contact you regarding this
+                                <label for="yes-contact-agreed">Q-8 <strong>Can we contact you regarding this
                                         incident?</strong></label><br>
                                 <input type="radio" id="yes-contact-agreed" name="contact-agreed" value="yes" required>
-                                <label for="contact-agreed-yes"><strong>Yes</strong></label><br>
+                                <label for="yes-contact-agreed"><strong>Yes</strong></label><br>
                                 <input type="radio" id="no-contact-agreed" name="contact-agreed" value="no" required>
-                                <label for="contact-agreed-no"><strong>No</strong></label><br>
+                                <label for="no-contact-agreed"><strong>No</strong></label><br>
 
                                 <p></p>
                             </div>
@@ -187,46 +188,42 @@
 
                             <!-- Q10 Contact Method Section -->
                             <div class="col-12 mb-3">
-                                <label for="contact-method">Q-10 <strong>Preferred method of
+                                <label for="contact-method-tel">Q-10 <strong>Preferred method of
                                         contact</strong></label><br>
                                 <input type="radio" id="contact-method-tel" name="contact-method" value="yes">
-                                <label for="contact-method-yes">Telephone</label><br>
+                                <label for="contact-method-tel">Telephone</label><br>
                                 <input type="radio" id="contact-method-email" name="contact-method" value="yes">
                                 <label for="contact-method-email">Email</label><br>
                             </div>
 
                             <!-- form submit button -->
                             <div><button class="button" type="submit">Submit</button></div>
-                            <div>
+                        </div>
                     </form>
                 </div>
             </div>
-        </section>
+        </div>   
     </main>
-   <!-- Footer -->
-<footer id="footer" class="mt-auto">
+  <!-- Footer -->
+  <footer id="footer" class="mt-auto footer footer-expand-lg">
     <div class="container-fluid">
         <div class="row justify-content-center">
             <div class="col-12 text-center">
-                <!--Social media links-->
-                <div class="row">
-                    <div class="social-links my-4">
-                    <p>Visit our social media pages for news and strategy updates</p>
-                    <div>
-                        <a href="https://www.instagram.com" target="_blank" aria-label="Visit our Instagram page (opens in a new tab)" rel="noopener">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                        <a href="https://www.facebook.com" target="_blank" aria-label="Visit our Facebook page (opens in a new tab)" rel="noopener">
-                            <i class="fa-brands fa-square-facebook"></i>
-                        </a>
-                        <a href="https://www.x.com" target="_blank" aria-label="Visit our X feed (opens in a new tab)" rel="noopener">
-                            <i class="fa-brands fa-x-twitter"></i>
-                        </a>
-                        <a href="https://www.youtube.com/watch?v=udRpKAlu-Q8" target="_blank" aria-label="See Prevent UK videos on YouTube (opens in a new tab)" rel="noopener">
-                            <i class="fa-brands fa-youtube"></i>
-                        </a>
-                    </div>
-                </div>
+            </div>
+        </div>
+        <!-- Social media links -->
+        <div class="row">
+            <div class="social-links my-4"> Visit our social media pages for news and strategy updates <div
+                    class="icon-wrapper"> <a href="https://www.instagram.com" target="_blank"
+                        aria-label="Visit our Instagram page (opens in a new tab)" rel="noopener"> <i
+                            class="fa-brands fa-instagram"></i> </a> <a href="https://www.facebook.com"
+                        target="_blank" aria-label="Visit our Facebook page (opens in a new tab)" rel="noopener"> <i
+                            class="fa-brands fa-square-facebook"></i> </a> <a href="https://www.x.com"
+                        target="_blank" aria-label="Visit our X feed (opens in a new tab)" rel="noopener"> <i
+                            class="fa-brands fa-x-twitter"></i> </a> <a
+                        href="https://www.youtube.com/watch?v=udRpKAlu-Q8" target="_blank"
+                        aria-label="See Prevent UK videos on YouTube (opens in a new tab)" rel="noopener"> <i
+                            class="fa-brands fa-square-youtube"></i> </a> </div>
             </div>
         </div>
     </div>
@@ -243,6 +240,5 @@
 
     <script src="https://kit.fontawesome.com/aa9af45995.js" crossorigin="anonymous"></script>
 
-    <!-- Javascript file for collapsing navbar selector-->
-    </body>
+</body>
 </html>
